@@ -6,11 +6,11 @@
 #define SCHOOLEXE_TEST_H
 
 #include "school.h"
-using std::string;
+#include "String.h"
 class Test{
 public:
     void test();
-    void showTeachersStudent(School school , std::string teachername);
-    School& initSchool(std::vector<Person*> &p,string student_names[],string teacher_names[],string leason_names[]);
+    void showTeachersStudent(School school , String teachername);
+    School* initSchool(std::vector<Person*> &p,String student_names[],String teacher_names[],String leason_names[]);
 };
 #endif //SCHOOLEXE_TEST_H

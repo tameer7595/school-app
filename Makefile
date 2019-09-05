@@ -9,7 +9,7 @@ INC_FLAGS=-I../include
 CFLAGS= -c -pedantic -Wall -Werror -Wconversion -ansi -g $(INC_FLAGS)# -g flag for using gdb
 CXXFLAGS=$(CFLAGS)
 
-.PHONY: clean run gdb
+.PHONY: clean run gdb leak
 
 $(TARGET): $(OBJS)
 
@@ -20,6 +20,8 @@ include .depends
 	$(CC) -MM -I$(INC_DIR) $(SOURCES) > .depends
 clean:
 	rm -f $(OBJS) $(TARGET) .depends
+leak:
+	valgrind --leak-check=full ./$(TARGET)
 
 run: $(TARGET)
 	./$(TARGET)

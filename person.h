@@ -4,21 +4,22 @@
 #include<iostream>
 #ifndef SCHOOLEXE_PERSON_H
 #define SCHOOLEXE_PERSON_H
+#include"String.h"
 class Person{
 public:
-    Person(const std::string&);
+    Person(const String&);
     virtual ~Person();
-    const std::string& getName() const;
+    const String& getName() const;
     size_t getId() const;
     virtual void action() = 0;
 private:
     static size_t s_count; /* manage the id member,increase it every time we create a new object person;*/
     size_t m_id ;
-    std::string m_name;
+    String m_name;
 };
 
 
-inline Person :: Person(const std::string& name) {
+inline Person :: Person(const String& name) {
     m_name = name;
     m_id = ++s_count;
 }
@@ -27,7 +28,7 @@ inline Person ::~Person() {
     std::cout << "person destructor" << std::endl;
 }
 
-inline  const std::string& Person:: getName() const{
+inline  const String& Person:: getName() const{
     return m_name;
 }
 

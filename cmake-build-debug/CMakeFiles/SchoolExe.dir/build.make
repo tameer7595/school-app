@@ -83,35 +83,9 @@ CMakeFiles/SchoolExe.dir/person.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SchoolExe.dir/person.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tameer/CLionProjects/SchoolExe/person.cpp -o CMakeFiles/SchoolExe.dir/person.cpp.s
 
-CMakeFiles/SchoolExe.dir/student.cpp.o: CMakeFiles/SchoolExe.dir/flags.make
-CMakeFiles/SchoolExe.dir/student.cpp.o: ../student.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tameer/CLionProjects/SchoolExe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SchoolExe.dir/student.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SchoolExe.dir/student.cpp.o -c /home/tameer/CLionProjects/SchoolExe/student.cpp
-
-CMakeFiles/SchoolExe.dir/student.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SchoolExe.dir/student.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tameer/CLionProjects/SchoolExe/student.cpp > CMakeFiles/SchoolExe.dir/student.cpp.i
-
-CMakeFiles/SchoolExe.dir/student.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SchoolExe.dir/student.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tameer/CLionProjects/SchoolExe/student.cpp -o CMakeFiles/SchoolExe.dir/student.cpp.s
-
-CMakeFiles/SchoolExe.dir/teacher.cpp.o: CMakeFiles/SchoolExe.dir/flags.make
-CMakeFiles/SchoolExe.dir/teacher.cpp.o: ../teacher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tameer/CLionProjects/SchoolExe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SchoolExe.dir/teacher.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SchoolExe.dir/teacher.cpp.o -c /home/tameer/CLionProjects/SchoolExe/teacher.cpp
-
-CMakeFiles/SchoolExe.dir/teacher.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SchoolExe.dir/teacher.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tameer/CLionProjects/SchoolExe/teacher.cpp > CMakeFiles/SchoolExe.dir/teacher.cpp.i
-
-CMakeFiles/SchoolExe.dir/teacher.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SchoolExe.dir/teacher.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tameer/CLionProjects/SchoolExe/teacher.cpp -o CMakeFiles/SchoolExe.dir/teacher.cpp.s
-
 CMakeFiles/SchoolExe.dir/school.cpp.o: CMakeFiles/SchoolExe.dir/flags.make
 CMakeFiles/SchoolExe.dir/school.cpp.o: ../school.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tameer/CLionProjects/SchoolExe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SchoolExe.dir/school.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tameer/CLionProjects/SchoolExe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SchoolExe.dir/school.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SchoolExe.dir/school.cpp.o -c /home/tameer/CLionProjects/SchoolExe/school.cpp
 
 CMakeFiles/SchoolExe.dir/school.cpp.i: cmake_force
@@ -124,7 +98,7 @@ CMakeFiles/SchoolExe.dir/school.cpp.s: cmake_force
 
 CMakeFiles/SchoolExe.dir/test.cpp.o: CMakeFiles/SchoolExe.dir/flags.make
 CMakeFiles/SchoolExe.dir/test.cpp.o: ../test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tameer/CLionProjects/SchoolExe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SchoolExe.dir/test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tameer/CLionProjects/SchoolExe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SchoolExe.dir/test.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SchoolExe.dir/test.cpp.o -c /home/tameer/CLionProjects/SchoolExe/test.cpp
 
 CMakeFiles/SchoolExe.dir/test.cpp.i: cmake_force
@@ -135,27 +109,38 @@ CMakeFiles/SchoolExe.dir/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SchoolExe.dir/test.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tameer/CLionProjects/SchoolExe/test.cpp -o CMakeFiles/SchoolExe.dir/test.cpp.s
 
+CMakeFiles/SchoolExe.dir/String.cpp.o: CMakeFiles/SchoolExe.dir/flags.make
+CMakeFiles/SchoolExe.dir/String.cpp.o: ../String.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tameer/CLionProjects/SchoolExe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SchoolExe.dir/String.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SchoolExe.dir/String.cpp.o -c /home/tameer/CLionProjects/SchoolExe/String.cpp
+
+CMakeFiles/SchoolExe.dir/String.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SchoolExe.dir/String.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tameer/CLionProjects/SchoolExe/String.cpp > CMakeFiles/SchoolExe.dir/String.cpp.i
+
+CMakeFiles/SchoolExe.dir/String.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SchoolExe.dir/String.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tameer/CLionProjects/SchoolExe/String.cpp -o CMakeFiles/SchoolExe.dir/String.cpp.s
+
 # Object files for target SchoolExe
 SchoolExe_OBJECTS = \
 "CMakeFiles/SchoolExe.dir/main.cpp.o" \
 "CMakeFiles/SchoolExe.dir/person.cpp.o" \
-"CMakeFiles/SchoolExe.dir/student.cpp.o" \
-"CMakeFiles/SchoolExe.dir/teacher.cpp.o" \
 "CMakeFiles/SchoolExe.dir/school.cpp.o" \
-"CMakeFiles/SchoolExe.dir/test.cpp.o"
+"CMakeFiles/SchoolExe.dir/test.cpp.o" \
+"CMakeFiles/SchoolExe.dir/String.cpp.o"
 
 # External object files for target SchoolExe
 SchoolExe_EXTERNAL_OBJECTS =
 
 SchoolExe: CMakeFiles/SchoolExe.dir/main.cpp.o
 SchoolExe: CMakeFiles/SchoolExe.dir/person.cpp.o
-SchoolExe: CMakeFiles/SchoolExe.dir/student.cpp.o
-SchoolExe: CMakeFiles/SchoolExe.dir/teacher.cpp.o
 SchoolExe: CMakeFiles/SchoolExe.dir/school.cpp.o
 SchoolExe: CMakeFiles/SchoolExe.dir/test.cpp.o
+SchoolExe: CMakeFiles/SchoolExe.dir/String.cpp.o
 SchoolExe: CMakeFiles/SchoolExe.dir/build.make
 SchoolExe: CMakeFiles/SchoolExe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tameer/CLionProjects/SchoolExe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable SchoolExe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tameer/CLionProjects/SchoolExe/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable SchoolExe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SchoolExe.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

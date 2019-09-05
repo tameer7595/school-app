@@ -123,6 +123,33 @@ SchoolExe/fast:
 	$(MAKE) -f CMakeFiles/SchoolExe.dir/build.make CMakeFiles/SchoolExe.dir/build
 .PHONY : SchoolExe/fast
 
+String.o: String.cpp.o
+
+.PHONY : String.o
+
+# target to build an object file
+String.cpp.o:
+	$(MAKE) -f CMakeFiles/SchoolExe.dir/build.make CMakeFiles/SchoolExe.dir/String.cpp.o
+.PHONY : String.cpp.o
+
+String.i: String.cpp.i
+
+.PHONY : String.i
+
+# target to preprocess a source file
+String.cpp.i:
+	$(MAKE) -f CMakeFiles/SchoolExe.dir/build.make CMakeFiles/SchoolExe.dir/String.cpp.i
+.PHONY : String.cpp.i
+
+String.s: String.cpp.s
+
+.PHONY : String.s
+
+# target to generate assembly for a file
+String.cpp.s:
+	$(MAKE) -f CMakeFiles/SchoolExe.dir/build.make CMakeFiles/SchoolExe.dir/String.cpp.s
+.PHONY : String.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -204,60 +231,6 @@ school.cpp.s:
 	$(MAKE) -f CMakeFiles/SchoolExe.dir/build.make CMakeFiles/SchoolExe.dir/school.cpp.s
 .PHONY : school.cpp.s
 
-student.o: student.cpp.o
-
-.PHONY : student.o
-
-# target to build an object file
-student.cpp.o:
-	$(MAKE) -f CMakeFiles/SchoolExe.dir/build.make CMakeFiles/SchoolExe.dir/student.cpp.o
-.PHONY : student.cpp.o
-
-student.i: student.cpp.i
-
-.PHONY : student.i
-
-# target to preprocess a source file
-student.cpp.i:
-	$(MAKE) -f CMakeFiles/SchoolExe.dir/build.make CMakeFiles/SchoolExe.dir/student.cpp.i
-.PHONY : student.cpp.i
-
-student.s: student.cpp.s
-
-.PHONY : student.s
-
-# target to generate assembly for a file
-student.cpp.s:
-	$(MAKE) -f CMakeFiles/SchoolExe.dir/build.make CMakeFiles/SchoolExe.dir/student.cpp.s
-.PHONY : student.cpp.s
-
-teacher.o: teacher.cpp.o
-
-.PHONY : teacher.o
-
-# target to build an object file
-teacher.cpp.o:
-	$(MAKE) -f CMakeFiles/SchoolExe.dir/build.make CMakeFiles/SchoolExe.dir/teacher.cpp.o
-.PHONY : teacher.cpp.o
-
-teacher.i: teacher.cpp.i
-
-.PHONY : teacher.i
-
-# target to preprocess a source file
-teacher.cpp.i:
-	$(MAKE) -f CMakeFiles/SchoolExe.dir/build.make CMakeFiles/SchoolExe.dir/teacher.cpp.i
-.PHONY : teacher.cpp.i
-
-teacher.s: teacher.cpp.s
-
-.PHONY : teacher.s
-
-# target to generate assembly for a file
-teacher.cpp.s:
-	$(MAKE) -f CMakeFiles/SchoolExe.dir/build.make CMakeFiles/SchoolExe.dir/teacher.cpp.s
-.PHONY : teacher.cpp.s
-
 test.o: test.cpp.o
 
 .PHONY : test.o
@@ -294,6 +267,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... SchoolExe"
 	@echo "... edit_cache"
+	@echo "... String.o"
+	@echo "... String.i"
+	@echo "... String.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -303,12 +279,6 @@ help:
 	@echo "... school.o"
 	@echo "... school.i"
 	@echo "... school.s"
-	@echo "... student.o"
-	@echo "... student.i"
-	@echo "... student.s"
-	@echo "... teacher.o"
-	@echo "... teacher.i"
-	@echo "... teacher.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"

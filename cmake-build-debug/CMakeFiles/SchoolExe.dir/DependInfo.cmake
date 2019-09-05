@@ -4,11 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/tameer/CLionProjects/SchoolExe/String.cpp" "/home/tameer/CLionProjects/SchoolExe/cmake-build-debug/CMakeFiles/SchoolExe.dir/String.cpp.o"
   "/home/tameer/CLionProjects/SchoolExe/main.cpp" "/home/tameer/CLionProjects/SchoolExe/cmake-build-debug/CMakeFiles/SchoolExe.dir/main.cpp.o"
   "/home/tameer/CLionProjects/SchoolExe/person.cpp" "/home/tameer/CLionProjects/SchoolExe/cmake-build-debug/CMakeFiles/SchoolExe.dir/person.cpp.o"
   "/home/tameer/CLionProjects/SchoolExe/school.cpp" "/home/tameer/CLionProjects/SchoolExe/cmake-build-debug/CMakeFiles/SchoolExe.dir/school.cpp.o"
-  "/home/tameer/CLionProjects/SchoolExe/student.cpp" "/home/tameer/CLionProjects/SchoolExe/cmake-build-debug/CMakeFiles/SchoolExe.dir/student.cpp.o"
-  "/home/tameer/CLionProjects/SchoolExe/teacher.cpp" "/home/tameer/CLionProjects/SchoolExe/cmake-build-debug/CMakeFiles/SchoolExe.dir/teacher.cpp.o"
   "/home/tameer/CLionProjects/SchoolExe/test.cpp" "/home/tameer/CLionProjects/SchoolExe/cmake-build-debug/CMakeFiles/SchoolExe.dir/test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

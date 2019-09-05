@@ -1,10 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/SchoolExe.dir/main.cpp.o"
   "CMakeFiles/SchoolExe.dir/person.cpp.o"
-  "CMakeFiles/SchoolExe.dir/student.cpp.o"
-  "CMakeFiles/SchoolExe.dir/teacher.cpp.o"
   "CMakeFiles/SchoolExe.dir/school.cpp.o"
   "CMakeFiles/SchoolExe.dir/test.cpp.o"
+  "CMakeFiles/SchoolExe.dir/String.cpp.o"
   "SchoolExe.pdb"
   "SchoolExe"
 )

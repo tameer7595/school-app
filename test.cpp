@@ -8,24 +8,27 @@
 #include "school.h"
 #include <list>
 #include "test.h"
-using std::string;
+#include "String.h"
 void Test::test() {
     std::cout << "Welcome To My School" << std::endl;
     std::vector<Person*> p = std::vector<Person*>(11);
-    std::string student_names[8] = {"Tameer","Kameel","Rawad","Arwa","Sari","daniel","Ahmned","Shady"};
-    std::string teacher_names[3] = {"Amitai","Ola","Margilit"};
-    std::string leason_names[3] = {"c++","python","data stucture"};
-    School school = initSchool(p,student_names,teacher_names,leason_names);
+    String student_names[8] = {"Tameer","Kameel","Rawad","Arwa","Sari","daniel","Ahmned","Shady"};
+    String teacher_names[3] = {"Amitai","Ola","Margilit"};
+    String leason_names[3] = {"c++","python","data stucture"};
+    School *school = initSchool(p,student_names,teacher_names,leason_names);
     std::cout<<"running action method:"<<std::endl;
     for(unsigned int i = 0 ; i < p.size() ; i++){
         p[i]->action();
 
     }
-
+    for(unsigned i =0 ;i<p.size() ; i++){
+        delete p[i];
+    }
+    delete school;
 }
 
 /* help func that print a list of the students paired with a certain teacher*/
-School& Test:: initSchool(std::vector<Person*> &p,string student_names[],string teacher_names[],string leason_names[]){
+School* Test:: initSchool(std::vector<Person*> &p,String student_names[],String teacher_names[],String leason_names[]){
     School *school  = new School();
 
     for (int i=0 ; i<8 ; i++){
@@ -44,10 +47,10 @@ School& Test:: initSchool(std::vector<Person*> &p,string student_names[],string 
         std::cout<< teacher_names[i]<<"'s Student:"<<std::endl;
         showTeachersStudent(*school,teacher_names[i]);
     }
-    return *school;
+    return school;
 }
 
-void Test :: showTeachersStudent(School school , std::string teachername){
+void Test :: showTeachersStudent(School school , String teachername){
     std::list<Student *> l = school.getTeacherStudents(teachername);
     std::list<Student *>::iterator it;
     for (it = l.begin(); it != l.end(); ++it) {

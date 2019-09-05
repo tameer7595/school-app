@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/tameer/CLionProjects/SchoolExe/String.cpp">
+			<Option target="SchoolExe"/>
+		</Unit>
+		<Unit filename="/home/tameer/CLionProjects/SchoolExe/String.h">
+			<Option target="SchoolExe"/>
+		</Unit>
 		<Unit filename="/home/tameer/CLionProjects/SchoolExe/main.cpp">
 			<Option target="SchoolExe"/>
 		</Unit>
@@ -99,13 +105,7 @@
 		<Unit filename="/home/tameer/CLionProjects/SchoolExe/school.h">
 			<Option target="SchoolExe"/>
 		</Unit>
-		<Unit filename="/home/tameer/CLionProjects/SchoolExe/student.cpp">
-			<Option target="SchoolExe"/>
-		</Unit>
 		<Unit filename="/home/tameer/CLionProjects/SchoolExe/student.h">
-			<Option target="SchoolExe"/>
-		</Unit>
-		<Unit filename="/home/tameer/CLionProjects/SchoolExe/teacher.cpp">
 			<Option target="SchoolExe"/>
 		</Unit>
 		<Unit filename="/home/tameer/CLionProjects/SchoolExe/teacher.h">
