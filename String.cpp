@@ -124,8 +124,9 @@ String String:: substring(int start,int end){
         new_buffer[i]=this->m_buffer[i+start];
         i++;
     }
-    delete [] new_buffer;
+
     String substr(new_buffer);
+    delete [] new_buffer;
     return substr;
 
 }
