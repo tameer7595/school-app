@@ -1,0 +1,3 @@
+/home/tameer/CLionProjects/SchoolExe/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/tameer/CLionProjects/SchoolExe/cmake-build-debug/CMakeFiles/SchoolExe.dir
+/home/tameer/CLionProjects/SchoolExe/cmake-build-debug/CMakeFiles/edit_cache.dir
