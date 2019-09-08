@@ -25,7 +25,7 @@ inline Person :: Person(const String& name) {
 }
 
 inline Person ::~Person() {
-    std::cout << "person destructor" << std::endl;
+
 }
 
 inline  const String& Person:: getName() const{

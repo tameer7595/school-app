@@ -41,10 +41,18 @@ School* Test:: initSchool(std::vector<Person*> &p,String student_names[],String 
         school->addTeacher(teacher);
         p[i] = teacher;
     }
-
-    school->pairTeacherToStudent(3);
+    school->pairTeacherToStudent(4);
     for ( int i = 0 ; i < 3; i++) {
-        std::cout<< teacher_names[i]<<"'s Student:"<<std::endl;
+        showTeachersStudent(*school,teacher_names[i]);
+    }
+    cout<<"after deleting teacher with id 9:"<<endl;
+    school->deleteTeacher(9);
+    for ( int i = 0 ; i < 3; i++) {
+       showTeachersStudent(*school,teacher_names[i]);
+   }
+    cout<<"after deleting student with id 2:"<<endl;
+    school->deleteStudent(2);
+    for ( int i = 0 ; i < 3; i++) {
         showTeachersStudent(*school,teacher_names[i]);
     }
     return school;
@@ -53,8 +61,11 @@ School* Test:: initSchool(std::vector<Person*> &p,String student_names[],String 
 void Test :: showTeachersStudent(School school , String teachername){
     std::list<Student *> l = school.getTeacherStudents(teachername);
     std::list<Student *>::iterator it;
-    for (it = l.begin(); it != l.end(); ++it) {
-        std::cout << '\t' << (*it)->getName();
-        std::cout << '\n';
+    if(l.size() != 0){
+        for (it = l.begin(); it != l.end(); ++it) {
+            std::cout << '\t' << (*it)->getName();
+            std::cout << '\n';
+        }
+
     }
 }

@@ -22,7 +22,8 @@ public:
 
     ~String();
 
-    int length() const;
+    size_t length() const;
+
 
 
     String& operator=(const String &s);
@@ -44,14 +45,20 @@ public:
     char &operator[](unsigned int);
 
     friend ostream &operator<<(ostream &os, const String &);
-    String substring(int start,int end);
+    const char* c_str() const;
+
+
+    String substring(size_t start,size_t end);
+
 
 private:
-    int m_size;
+
     char *m_buffer;
 
-    int lenOfChar(const char *);
-};
 
+};
+inline const char* String::c_str() const {
+    return m_buffer;
+}
 
 #endif //SCHOOLEXE_STRING_H

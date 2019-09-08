@@ -20,7 +20,7 @@ private:
 inline Student :: Student(const String& name , unsigned char grade):Person(name),m_grade(grade){}
 
 inline Student ::~Student() {
-    std::cout << "student destructor" << std::endl ;
+
 }
 inline void Student :: action(){
     std::cout << "I'm a Student : " << getName()<< ",My grade : " << static_cast<int>(m_grade) << std::endl;

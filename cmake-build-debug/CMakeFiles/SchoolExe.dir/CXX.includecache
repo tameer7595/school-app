@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/tameer/CLionProjects/SchoolExe/String.cpp
-String.h
-/home/tameer/CLionProjects/SchoolExe/String.h
-cstring
--
-stdlib.h
--
-
 /home/tameer/CLionProjects/SchoolExe/String.h
 iostream
 -
@@ -22,25 +14,11 @@ cassert
 cstring
 -
 
-/home/tameer/CLionProjects/SchoolExe/main.cpp
-iostream
--
-test.h
-/home/tameer/CLionProjects/SchoolExe/test.h
-
-/home/tameer/CLionProjects/SchoolExe/person.cpp
-person.h
-/home/tameer/CLionProjects/SchoolExe/person.h
-
 /home/tameer/CLionProjects/SchoolExe/person.h
 iostream
 -
 String.h
 /home/tameer/CLionProjects/SchoolExe/String.h
-
-/home/tameer/CLionProjects/SchoolExe/school.cpp
-school.h
-/home/tameer/CLionProjects/SchoolExe/school.h
 
 /home/tameer/CLionProjects/SchoolExe/school.h
 iostream

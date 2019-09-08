@@ -12,10 +12,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4851b1a3-dcd6-4627-a6ae-e9d211bbe514" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/StringManipulation.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.depends" beforeDir="false" afterPath="$PROJECT_DIR$/.depends" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/String.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/String.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/String.h" beforeDir="false" afterPath="$PROJECT_DIR$/String.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/String.o" beforeDir="false" afterPath="$PROJECT_DIR$/String.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SchoolExe.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SchoolExe.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SchoolExe.dir/String.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SchoolExe.dir/String.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SchoolExe.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SchoolExe.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SchoolExe.dir/school.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SchoolExe.dir/school.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SchoolExe.dir/test.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SchoolExe.dir/test.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SchoolExe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SchoolExe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SchoolExe.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SchoolExe.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main" beforeDir="false" afterPath="$PROJECT_DIR$/main" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/person.h" beforeDir="false" afterPath="$PROJECT_DIR$/person.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/person.o" beforeDir="false" afterPath="$PROJECT_DIR$/person.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/school.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school.h" beforeDir="false" afterPath="$PROJECT_DIR$/school.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school.o" beforeDir="false" afterPath="$PROJECT_DIR$/school.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student.h" beforeDir="false" afterPath="$PROJECT_DIR$/student.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher.h" beforeDir="false" afterPath="$PROJECT_DIR$/teacher.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.o" beforeDir="false" afterPath="$PROJECT_DIR$/test.o" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +90,11 @@
       <updated>1567618804618</updated>
       <workItem from="1567618812398" duration="33609000" />
       <workItem from="1567689219450" duration="4820000" />
-      <workItem from="1567705004494" duration="2119000" />
+      <workItem from="1567705004494" duration="2613000" />
+      <workItem from="1567769058485" duration="10732000" />
+      <workItem from="1567924883309" duration="538000" />
+      <workItem from="1567933170216" duration="779000" />
+      <workItem from="1567937109507" duration="163000" />
     </task>
     <servers />
   </component>

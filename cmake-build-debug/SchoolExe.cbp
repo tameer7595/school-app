@@ -90,6 +90,9 @@
 		<Unit filename="/home/tameer/CLionProjects/SchoolExe/String.h">
 			<Option target="SchoolExe"/>
 		</Unit>
+		<Unit filename="/home/tameer/CLionProjects/SchoolExe/StringManipulation.h">
+			<Option target="SchoolExe"/>
+		</Unit>
 		<Unit filename="/home/tameer/CLionProjects/SchoolExe/main.cpp">
 			<Option target="SchoolExe"/>
 		</Unit>

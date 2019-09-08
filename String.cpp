@@ -4,62 +4,51 @@
 #include "String.h"
 #include<cstring>
 #include <stdlib.h>
+#include "StringManipulation.h"
 
 String::String(){
     //cout<<"cont for empty cont"<<endl;
-    m_buffer = new char[1];
+    m_buffer = (char*)malloc(sizeof(char));
     m_buffer[0] ='\0';
-    m_size = 0;
+
 }
 
 String::String(const char *str){
-    //cout<<"cont for char*:"<<endl;
-    int length = lenOfChar(str);
-    m_buffer = new char[length+1];
-    m_size = length;
-    m_buffer=strcpy(m_buffer,str);
+    m_buffer = (char*)malloc(sizeof(char)*(my_strlen(str)+1));
+    my_strcpy(m_buffer,str);
 
-}
-
-int String :: lenOfChar(const char *str){
-    const char *temp = str;
-    int count = 0;
-    while(*temp++) {
-        count++;
-    }
-    return count;
 }
 
 String::String(const String & str){
     //cout<<"copy cont"<<endl;
-    m_buffer = new char[str.m_size+1];
-    m_size = str.m_size;
-    strcpy(m_buffer,str.m_buffer);
+
+    m_buffer =  (char*)malloc(sizeof(char)*(my_strlen(str.m_buffer)+1));
+    my_strcpy(m_buffer,str.m_buffer);
 }
 
 String ::~String(){
-    // cout<<"destructor"<<endl;
-    delete[] m_buffer ;
+    free(m_buffer) ;
 }
 
-int String :: length() const{
-    return m_size;
+size_t String :: length() const{
+    return my_strlen((m_buffer));
 }
 
 String& String :: operator=(const String &str){
-    delete[] m_buffer;
-    m_buffer = new char[str.m_size+1];
-    strcpy(m_buffer,str.m_buffer);
-    m_size = str.m_size;
+    free(m_buffer);
+    m_buffer = (char*)malloc(sizeof(char)*(my_strlen(str.m_buffer)+1));
+    my_strcpy(m_buffer,str.m_buffer);
+
     return *this;
 }
 
 String& String::operator+=(const String &str){
-    char *temp =(char*) realloc(m_buffer,str.m_size);
-    if(temp)
+    char *temp =(char*) realloc(m_buffer,my_strlen(m_buffer)+my_strlen(str.m_buffer)+1);
+    if(temp) {
         m_buffer = temp;
-    strcat(m_buffer,str.m_buffer);
-    m_size+=str.m_size;
+    }
+    my_strcat(m_buffer,str.m_buffer);
+
     return *this;
 
 }
@@ -74,59 +63,51 @@ char& String :: operator[] (unsigned int index){
 }
 const String& String:: operator+(const String &str){
     String *newstr = new String();
-    newstr->m_buffer=new char[str.m_size+m_size+1];
-    strcat(newstr->m_buffer,this->m_buffer);
-    strcat(newstr->m_buffer,str.m_buffer);
-    newstr->m_size=str.m_size+m_size;
+    //newstr->m_buffer=new char[my_strlen(str.m_buffer)+my_strlen(m_buffer)+1];
+    newstr->m_buffer=(char*)malloc(sizeof(char)*(my_strlen(str.m_buffer)+my_strlen(m_buffer)+1));
+    my_strcat(newstr->m_buffer,this->m_buffer);
+    my_strcat(newstr->m_buffer,str.m_buffer);
     return *newstr;
 
 }
-bool operator == (const String &str,const String &str1) {
-    if(str1.m_size != str.m_size)
+bool operator == (const String &firstStr, const String &secondStr) {
+    if(my_strlen(secondStr.m_buffer)!= my_strlen(firstStr.m_buffer))
         return false;
-    return !strcmp(str.m_buffer,str1.m_buffer);
+    return !my_strcmp(firstStr.m_buffer, secondStr.m_buffer);
 }
-bool operator <= (const String &str,const String &str1) {
-    int cmp = strcmp(str.m_buffer,str1.m_buffer);
-    if(cmp>0)
-        return false;
-    return true;
+bool operator <= (const String &firstStr, const String &secondStr) {
+    return !(firstStr>secondStr);
 }
-bool operator >= (const String &str,const String &str1) {
-    int cmp = strcmp(str.m_buffer,str1.m_buffer);
-    if(cmp<0)
-        return false;
-    return true;
+bool operator >= (const String &firstStr, const String &secondStr) {
+    return !(firstStr < secondStr);
+
 }
-bool operator < (const String &str,const String &str1){
-    int cmp = strcmp(str.m_buffer,str1.m_buffer);
-    if(cmp>=0)
-        return false;
-    return true;
+bool operator < (const String &firstStr, const String &secondStr){
+    return my_strcmp(firstStr.m_buffer, secondStr.m_buffer) < 0;
 }
-bool operator > (const String &str,const String &str1){
-    int cmp = strcmp(str.m_buffer,str1.m_buffer);
-    if(cmp<=0)
-        return false;
-    return true;
+bool operator > (const String &firstStr, const String &secondStr){
+    return my_strcmp(firstStr.m_buffer, secondStr.m_buffer) > 0;
 }
 
-String String:: substring(int start,int end){
-    if(start<0 || end >= this->m_size) {
+String String:: substring(size_t start,size_t end){
+    if(start<0 || end >= my_strlen(this->m_buffer)) {
         cout << "BAD_INDEX";
         return NULL;
     }
 
-    int len = end-start+1;
-    char *new_buffer = new char[len];
-    int i=0;
+    size_t len = end-start+1;
+    //char *new_buffer = new char[len];
+    char *new_buffer = (char*)malloc(sizeof(char)*len);
+    size_t i=0;
     while(i < len-1){
         new_buffer[i]=this->m_buffer[i+start];
         i++;
     }
-
+    new_buffer[i] = '\0';
     String substr(new_buffer);
-    delete [] new_buffer;
+    free(new_buffer);
     return substr;
 
 }
+
+

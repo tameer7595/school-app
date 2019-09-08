@@ -16,7 +16,6 @@ private:
 inline Teacher :: Teacher(const String& name,const String& leason) : Person(name),m_leason(leason){}
 
 inline Teacher :: ~Teacher(){
-    std::cout<<"tacher destructor"<<std::endl;
 }
 
 inline void Teacher :: action(){
